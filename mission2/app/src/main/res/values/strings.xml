@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mission2</string>
+    <string name="str_send">전송</string>
+    <string name="str_close">닫기</string>
+</resources>
