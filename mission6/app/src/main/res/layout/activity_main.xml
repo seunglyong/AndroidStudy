@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="org.androidstudy.mission6.MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnExpand"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|center"
+        android:src="@drawable/arrow_down"
+        android:background="@drawable/edit_text_style"
+        android:onClick="btnExpandClicked"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@drawable/edit_text_style">
+        <LinearLayout
+            android:id="@+id/layoutURL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_style"
+            android:padding="3dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/tbURL"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"
+                android:inputType="textUri"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btnLoad"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_gravity="center"
+                android:onClick="btnLoadClicked"
+                android:text="이동"/>
+        </LinearLayout>
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_style">
+        </WebView>
+
+
+    </LinearLayout>
+</LinearLayout>
